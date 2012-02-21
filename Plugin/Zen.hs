@@ -1,8 +1,8 @@
 {-# LANGUAGE TemplateHaskell, MultiParamTypeClasses #-}
--- Copyright (c) 2012 Zach Kelling
+-- Copyright (c) Zach Kelling - http://github.com/zeekay
 -- GPL version 2 or later (see http://www.gnu.org/copyleft/gpl.html)
 
--- | Lambdabot Zen of Haskell plugin
+-- | Provides The Zen of Haskell
 module Plugin.Zen where
 
 import Plugin
