@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Copyright (c) 2006 Don Stewart - http://www.cse.unsw.edu.au/~dons
+# GPL version 2 or later (see http://www.gnu.org/copyleft/gpl.html)
+
+#
+# Generic lambdabot binding
+#
+# Select the expression you want to refactor, on a line of its own, and
+# in vim, type:
+#       !!bot cmd
+#
+# (Assuming your lambdabot is installed in $HOME/lambdabot, it will
+# replace the expression with the pointfree version
+#
+
+DECL=`cat`
+cd $HOME/lambdabot/
+echo "$* $DECL" | ./lambdabot | sed '$d;s/lambdabot> //'
